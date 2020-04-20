@@ -1,0 +1,23 @@
+{
+  "name": "capstone-project-postit-template-group-5",
+  "version": "1.0.0",
+  "description": "Stutern - React Capstone Project for Group 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erhurunp/Capstone-Project-PostIt-Template-Group-5.git"
+  },
+  "author": "\"Ayodele\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erhurunp/Capstone-Project-PostIt-Template-Group-5/issues"
+  },
+  "homepage": "https://github.com/erhurunp/Capstone-Project-PostIt-Template-Group-5#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
