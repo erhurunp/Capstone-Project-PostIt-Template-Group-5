@@ -175,6 +175,10 @@ hr {
   display: none;
 }
 @media screen and (max-width: 760px) {
+  .chatbox {
+    font-size: small;
+    font-weight: bold;
+  }
   .search-box {
     display: none;
   }
