@@ -4,7 +4,7 @@ import ChatBody from './ChatBody';
 
 const ChatPage = () => {
   return (
-    <div className='col-md-9'>
+    <div className='chatPage'>
       <ChatHeader />
       <div className='chat-panel'>
         <ChatBody />

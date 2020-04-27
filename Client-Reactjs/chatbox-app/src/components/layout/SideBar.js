@@ -7,7 +7,7 @@ const SideBar = () => {
     <section className='left'>
       <div className='nested'>
         <Link style={{ color: '#fff' }} className='navbar-brand chatbox' to='/'>
-          ChatBox{' '}
+          <span className='chatbox'>ChatBox </span>
         </Link>
       </div>
       <br className='break' />

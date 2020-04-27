@@ -65,7 +65,7 @@ img {
 }
 .wrapper {
   display: grid;
-  grid-template-columns: 10% 90%;
+  grid-template-columns: 10% 20% 70%;
   grid-auto-rows: minmax(100px, auto);
   border-bottom: 1px solid #eee;
 }
@@ -261,10 +261,15 @@ button {
 }
 
 @media screen and (max-width: 760px) {
+  .chatbox {
+    font-size: small;
+  }
   .wrapper {
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-auto-rows: auto;
+  }
+  .chatPage {
+    display: none;
   }
   .right {
     width: auto;

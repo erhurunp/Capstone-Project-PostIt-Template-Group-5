@@ -1,17 +1,17 @@
 import React from 'react';
-import ChatPage from './ChatPage';
-import BodyList from './BodyList';
+import { Input, InputGroup } from 'reactstrap';
+import GroupList from './GroupList';
+import GroupModal from './GroupModal';
 
 const MainBody = () => {
   return (
-    <section className='right'>
-      <div>
-        <div className='row no-gutters'>
-          <BodyList />
-          <ChatPage />
-        </div>
-      </div>
-    </section>
+    <div className='containerFluid'>
+      <InputGroup style={{ marginBottom: '2rem' }}>
+        <Input placeholder='Filter Groups' />
+      </InputGroup>
+      <GroupModal />
+      <GroupList />
+    </div>
   );
 };
 

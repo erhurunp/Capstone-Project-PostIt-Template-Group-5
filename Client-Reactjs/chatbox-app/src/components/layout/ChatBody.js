@@ -1,14 +1,24 @@
 import React from 'react';
+import Avatar from 'avataaars';
 
 const ChatBody = () => {
   return (
     <div>
       <div className='row no-gutters'>
         <div className='container darker'>
-          <img
-            src='https://clarity-enhanced.net/wp-content/themes/clarity-enhanced/assets/img/bootstrap-chat-app-assets/filip.jpg'
-            alt='Avatar'
-            className='profile-image'
+          <Avatar
+            style={{ width: '50px', height: '50px' }}
+            avatarStyle='Circle'
+            topType='ShortHairShaggyMullet'
+            accessoriesType='Kurt'
+            hairColor='Red'
+            facialHairType='MoustacheMagnum'
+            facialHairColor='Black'
+            clotheType='BlazerShirt'
+            eyeType='Side'
+            eyebrowType='AngryNatural'
+            mouthType='Eating'
+            skinColor='Brown'
           />
           <p>Hello. How are you today?</p>
           <span className='time-right'>11:00</span>
@@ -16,10 +26,21 @@ const ChatBody = () => {
       </div>
       <div className='row no-gutters'>
         <div className='container'>
-          <img
-            src='https://clarity-enhanced.net/wp-content/themes/clarity-enhanced/assets/img/bootstrap-chat-app-assets/robocop.jpg'
-            alt='Avatar'
-            className='profile-image right'
+          <Avatar
+            style={{ width: '50px', height: '50px' }}
+            avatarStyle='Circle'
+            topType='Eyepatch'
+            accessoriesType='Wayfarers'
+            hairColor='PastelPink'
+            facialHairType='BeardLight'
+            facialHairColor='Red'
+            clotheType='CollarSweater'
+            clotheColor='Heather'
+            eyeType='Dizzy'
+            eyebrowType='UpDown'
+            mouthType='ScreamOpen'
+            skinColor='Light'
+            className='right'
           />
           <p>Hello, am good and you?</p>
           <span className='time-left'>11:05</span>
@@ -27,10 +48,19 @@ const ChatBody = () => {
       </div>
       <div className='row no-gutters'>
         <div className='container darker'>
-          <img
-            src='https://clarity-enhanced.net/wp-content/themes/clarity-enhanced/assets/img/bootstrap-chat-app-assets/filip.jpg'
-            alt='Avatar'
-            className='profile-image'
+          <Avatar
+            style={{ width: '50px', height: '50px' }}
+            avatarStyle='Circle'
+            topType='ShortHairShaggyMullet'
+            accessoriesType='Kurt'
+            hairColor='Red'
+            facialHairType='MoustacheMagnum'
+            facialHairColor='Black'
+            clotheType='BlazerShirt'
+            eyeType='Side'
+            eyebrowType='AngryNatural'
+            mouthType='Eating'
+            skinColor='Brown'
           />
           <p>Not bad, just had a long day</p>
           <span className='time-right'>11:10</span>
@@ -38,10 +68,21 @@ const ChatBody = () => {
       </div>
       <div className='row no-gutters'>
         <div className='container'>
-          <img
-            src='https://clarity-enhanced.net/wp-content/themes/clarity-enhanced/assets/img/bootstrap-chat-app-assets/robocop.jpg'
-            alt='Avatar'
-            className='profile-image right'
+          <Avatar
+            style={{ width: '50px', height: '50px' }}
+            avatarStyle='Circle'
+            topType='Eyepatch'
+            accessoriesType='Wayfarers'
+            hairColor='PastelPink'
+            facialHairType='BeardLight'
+            facialHairColor='Red'
+            clotheType='CollarSweater'
+            clotheColor='Heather'
+            eyeType='Dizzy'
+            eyebrowType='UpDown'
+            mouthType='ScreamOpen'
+            skinColor='Light'
+            className='right'
           />
           <p>Sorry bro, just have a cold bath and you will feel better</p>
           <span className='time-left'>11:11</span>

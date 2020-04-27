@@ -1,13 +1,24 @@
 import React from 'react';
+import Avatar from 'avataaars';
 
 const ChatHeader = () => {
   return (
     <div className='settings-tray friend'>
       <div className='friend-drawer no-gutters friend-drawer--grey'>
-        <img
-          className='profile-image'
-          src='https://clarity-enhanced.net/wp-content/themes/clarity-enhanced/assets/img/bootstrap-chat-app-assets/robocop.jpg'
-          alt=''
+        <Avatar
+          style={{ width: '50px', height: '50px' }}
+          avatarStyle='Circle'
+          topType='Eyepatch'
+          accessoriesType='Wayfarers'
+          hairColor='PastelPink'
+          facialHairType='BeardLight'
+          facialHairColor='Red'
+          clotheType='CollarSweater'
+          clotheColor='Heather'
+          eyeType='Dizzy'
+          eyebrowType='UpDown'
+          mouthType='ScreamOpen'
+          skinColor='Light'
         />
         <div className='text'>
           <h6>Robo Cop</h6>

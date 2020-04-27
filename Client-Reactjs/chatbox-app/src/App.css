@@ -7,6 +7,27 @@ body {
 a {
   color: #fff;
 }
+.remove-btn {
+  float: right;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in;
+}
+
 .container {
   margin: 60px auto;
   background: #fff;
@@ -113,6 +134,13 @@ hr {
   border: 1px solid #98ff98;
   background-color: #fff;
   border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.containerFluid {
+  background-color: #fff;
+
   padding: 10px;
   margin: 10px 0;
 }
