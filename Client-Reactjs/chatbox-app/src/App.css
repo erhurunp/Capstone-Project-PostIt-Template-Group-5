@@ -116,6 +116,7 @@ input:focus {
   color: grey;
 }
 .friend-drawer--onhover:hover {
+  color: #fff;
   background: #013243;
   cursor: pointer;
 }
@@ -203,6 +204,24 @@ hr {
 }
 .break {
   display: none;
+}
+
+.message {
+  margin: 15px 0 15px 15px;
+}
+
+.message .message-username {
+  font-size: 11px;
+  color: #013243;
+  opacity: 0.9;
+  margin-bottom: 6px;
+}
+.message .message-text {
+  background: #013243;
+  color: #fff;
+  display: inline;
+  padding: 4px 8px;
+  border-radius: 8px;
 }
 @media screen and (max-width: 760px) {
   .chatbox {

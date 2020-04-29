@@ -15,6 +15,7 @@ export const GET_CHAT = 'GET_CHAT';
 export const DELETE_CHAT = 'DELETE_CHAT';
 export const SET_CURRENT = 'SET_CURRENT';
 export const CLEAR_FILTER = 'CLEAR_FILTER';
+export const CLEAR_FIELD = 'CLEAR_FIELD';
 export const SIGNUP = 'SIGNUP';
 export const LOGIN = 'LOGIN';
 export const LOGOUT = 'LOGOUT';

@@ -5,7 +5,7 @@ import GroupModal from './GroupModal';
 
 const MainBody = () => {
   return (
-    <div className='containerFluid'>
+    <div className='containerFluid main-body'>
       <InputGroup style={{ marginBottom: '2rem' }}>
         <Input placeholder='Filter Groups' />
       </InputGroup>

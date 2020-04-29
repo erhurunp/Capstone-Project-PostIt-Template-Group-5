@@ -16,15 +16,15 @@ class GroupList extends Component {
   render() {
     const { groups } = this.props.group;
     return (
-      <ListGroup style={{ border: 'none' }} flush>
-        <TransitionGroup className='group-list'>
+      <ListGroup flush>
+        <TransitionGroup className='group-list '>
           {groups.map(({ id, name }) => (
-            <CSSTransition key={id} timeout={500} classNames='fade'>
-              <ListGroupItem>
+            <CSSTransition key={id} timeout={500} classNames=''>
+              <ListGroupItem className='friend-drawer friend-drawer--onhover'>
                 {name}
                 <Button
                   className='remove-btn'
-                  style={{ color: '98ff98' }}
+                  style={{ display: 'none' }}
                   size='sm'
                   onClick={this.onDeleteClick.bind(this, id)}
                 >

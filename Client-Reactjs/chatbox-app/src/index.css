@@ -64,16 +64,41 @@ img {
   background-size: cover;
 }
 .wrapper {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 10% 20% 70%;
   grid-auto-rows: minmax(100px, auto);
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eee; */
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 10% 15% repeat(3, auto);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'r m m n n n'
+    'r m m n n n'
+    'r m m n n n'
+    'r m m n n n'
+    'r m m n n n'
+    'r m m s s s';
 }
 .left {
+  grid-area: r;
   color: #fff;
   background-color: #013243;
 }
-
+.chatPage {
+  grid-area: n;
+  max-width: 70vw;
+  align-self: start;
+}
+.main-body {
+  grid-area: m;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.chat-form {
+  grid-area: s;
+  max-width: 70vw;
+}
 .nested {
   display: grid;
   justify-content: center;
