@@ -1,14 +1,12 @@
 import React from 'react';
-import { Input, InputGroup } from 'reactstrap';
 import GroupList from './GroupList';
 import GroupModal from './GroupModal';
+import FilterForm from './FilterForm';
 
 const MainBody = () => {
   return (
     <div className='containerFluid main-body'>
-      <InputGroup style={{ marginBottom: '2rem' }}>
-        <Input placeholder='Filter Groups' />
-      </InputGroup>
+      <FilterForm />
       <GroupModal />
       <GroupList />
     </div>

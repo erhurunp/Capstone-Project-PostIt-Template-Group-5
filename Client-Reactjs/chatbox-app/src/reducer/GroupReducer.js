@@ -1,5 +1,11 @@
 import { v4 as uuidv4 } from 'uuid';
-import { ADD_GROUP, GET_GROUPS, DELETE_GROUP } from '../actions/types';
+import {
+  ADD_GROUP,
+  GET_GROUPS,
+  DELETE_GROUP,
+  FILTER_GROUP,
+  CLEAR_FILTER,
+} from '../actions/types';
 const initialState = {
   groups: [
     { id: uuidv4(), name: 'Devs' },
@@ -10,6 +16,8 @@ const initialState = {
     { id: uuidv4(), name: 'Backend Devs' },
     { id: uuidv4(), name: 'Football' },
   ],
+  text: '',
+  filtered: null,
 };
 
 export default function (state = initialState, action) {
@@ -27,6 +35,33 @@ export default function (state = initialState, action) {
       return {
         ...state,
         groups: [action.payload, ...state.groups],
+      };
+    case FILTER_GROUP:
+      // const { text } = action.payload;
+      return {
+        ...state,
+        text: action.payload,
+
+        groups: action.payload
+          ? state.groups.filter(
+              (group) =>
+                group.name.toLowerCase().indexOf(action.payload.toLowerCase()) >
+                -1
+            )
+          : state.groups,
+      };
+    case CLEAR_FILTER:
+      return {
+        ...state,
+        text: '',
+        groups: action.payload
+          ? state.groups.filter(
+              (group) =>
+                group.name
+                  .toLowerCase()
+                  .indexOf(action.payload.toLowerCase()) === -1
+            )
+          : state.groups,
       };
     default:
       return state;
