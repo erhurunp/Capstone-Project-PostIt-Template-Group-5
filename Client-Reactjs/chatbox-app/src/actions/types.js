@@ -1,6 +1,8 @@
 export const ADD_USER = 'ADD_USER';
 export const GET_USER = 'GET_USER';
 export const GET_GROUPS = 'GET_GROUPS';
+export const SELETED_GROUP = 'SELECTED_GROUP';
+export const SELETED_GROUP_CHAT = 'SELETED_GROUP_CHAT';
 export const ADD_GROUP = 'ADD_GROUP';
 export const UPDATE_GROUP = 'UPDATE_GROUP';
 export const FILTER_GROUP = 'FILTER_GROUP';

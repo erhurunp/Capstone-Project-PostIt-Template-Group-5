@@ -80,6 +80,19 @@ img {
     'r m m n n n'
     'r m m s s s';
 }
+.wrapper2 {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 15% repeat(3, auto);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'm m n n n'
+    'm m n n n'
+    'm m n n n'
+    'm m n n n'
+    'm m n n n'
+    'm m s s s ';
+}
 .left {
   grid-area: r;
   color: #fff;

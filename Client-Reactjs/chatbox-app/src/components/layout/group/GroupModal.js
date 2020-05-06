@@ -11,7 +11,7 @@ import {
   Input,
 } from 'reactstrap';
 import { connect } from 'react-redux';
-import { addGroup } from '../../actions/groupActions';
+import { addGroup } from '../../../actions/groupActions';
 
 class GroupModal extends Component {
   state = {
@@ -60,6 +60,14 @@ class GroupModal extends Component {
                   name='name'
                   id='group'
                   placeholder='Group Name'
+                  onChange={this.onChange}
+                />
+                <Input
+                  style={{ marginTop: '2rem' }}
+                  type='text'
+                  name='name'
+                  id='group'
+                  placeholder='Group Description'
                   onChange={this.onChange}
                 />
                 <Button color='success' style={{ marginTop: '2rem' }} block>

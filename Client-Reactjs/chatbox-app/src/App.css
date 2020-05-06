@@ -120,11 +120,11 @@ input:focus {
   background: #013243;
   cursor: pointer;
 }
-.friend-drawer--onhover:hover p,
+/* .friend-drawer--onhover:hover p,
 .friend-drawer--onhover:hover h6,
 .friend-drawer--onhover:hover .time {
   color: #fff !important;
-}
+} */
 
 hr {
   margin: 5px auto;

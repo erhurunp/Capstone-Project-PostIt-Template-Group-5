@@ -3,16 +3,17 @@ import {
   GET_GROUPS,
   DELETE_GROUP,
   FILTER_GROUP,
-  CLEAR_FILTER,
+  SELETED_GROUP,
 } from '../actions/types';
 export const getGroups = () => {
   return {
     type: GET_GROUPS,
   };
 };
-export const clearFilter = () => {
+export const getGroupMessages = (messages) => {
   return {
-    type: CLEAR_FILTER,
+    type: SELETED_GROUP,
+    payload: messages,
   };
 };
 

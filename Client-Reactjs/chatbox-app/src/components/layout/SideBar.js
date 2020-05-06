@@ -14,17 +14,18 @@ const SideBar = () => {
       <br className='break' />
       <br />
       <div className='nested'>
+        <Link style={{ color: '#fff' }} to='/'>
+          <Svg name='grouplist' />
+          <p>Home</p>
+        </Link>
+      </div>
+      <div className='nested'>
         <Link style={{ color: '#fff' }} to='/contacts'>
           <Svg name='contact' />
           <p>Contacts</p>
         </Link>
       </div>
-      <div className='nested'>
-        <Link style={{ color: '#fff' }} to='/grouplist'>
-          <Svg name='grouplist' />
-          <p>Grouplist</p>
-        </Link>
-      </div>
+
       <div className='nested'>
         <Link style={{ color: '#fff' }} to='/chat'>
           <Svg name='chat' />

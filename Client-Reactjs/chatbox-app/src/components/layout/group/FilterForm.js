@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Form, FormGroup, Input, InputGroup } from 'reactstrap';
-import { filterGroup, clearFilter, addGroup } from '../../actions/groupActions';
+import { filterGroup, getGroups } from '../../../actions/groupActions';
 
 class FilterForm extends Component {
   state = {
@@ -9,12 +9,11 @@ class FilterForm extends Component {
   };
   onFilterChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
-    // this.props.filterGroup(e.target.value);
-    // this.props.clearFilter();
+
     if (e.target.name !== '') {
       this.props.filterGroup(e.target.value);
     } else {
-      this.props.clearFilter();
+      this.props.getGroups();
     }
   };
   render() {
@@ -39,6 +38,8 @@ const mapStateToProps = (state) => ({
   group: state.group,
 });
 
-export default connect(mapStateToProps, { filterGroup, clearFilter, addGroup })(
-  FilterForm
-);
+export default connect(mapStateToProps, {
+  filterGroup,
+
+  getGroups,
+})(FilterForm);

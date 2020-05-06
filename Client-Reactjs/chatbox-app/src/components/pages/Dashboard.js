@@ -1,13 +1,12 @@
 import React from 'react';
 import ChatPage from '../layout/ChatPage';
-import SideBar from '../layout/SideBar';
-import MainBody from '../layout/group/MainBody';
+
+import MainBody from '../layout//group/MainBody';
 import ChatForm from '../layout/ChatForm';
 
-const Home = () => {
+const Dashboard = () => {
   return (
-    <main className='wrapper'>
-      <SideBar />
+    <main className='wrapper2'>
       <MainBody />
       <ChatPage />
       <ChatForm />
@@ -15,4 +14,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Dashboard;

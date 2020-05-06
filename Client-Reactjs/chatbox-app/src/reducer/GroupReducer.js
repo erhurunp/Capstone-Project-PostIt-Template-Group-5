@@ -6,9 +6,13 @@ import {
   FILTER_GROUP,
   CLEAR_FILTER,
 } from '../actions/types';
+import { dummyMessages } from '../Data/Data';
 const initialState = {
   groups: [
-    { id: uuidv4(), name: 'Devs' },
+    {
+      id: uuidv4(),
+      name: 'Devs',
+    },
     { id: uuidv4(), name: 'Stutern' },
     { id: uuidv4(), name: 'Reunion' },
     { id: uuidv4(), name: 'SpaceX' },
@@ -16,8 +20,8 @@ const initialState = {
     { id: uuidv4(), name: 'Backend Devs' },
     { id: uuidv4(), name: 'Football' },
   ],
-  text: '',
-  filtered: null,
+  dummyMessages,
+  selected: false,
 };
 
 export default function (state = initialState, action) {
@@ -26,6 +30,7 @@ export default function (state = initialState, action) {
       return {
         ...state,
       };
+
     case DELETE_GROUP:
       return {
         ...state,
@@ -40,7 +45,6 @@ export default function (state = initialState, action) {
       // const { text } = action.payload;
       return {
         ...state,
-        text: action.payload,
 
         groups: action.payload
           ? state.groups.filter(

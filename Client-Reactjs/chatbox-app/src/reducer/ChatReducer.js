@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
-import { ADD_CHAT, GET_CHAT } from '../actions/types';
+import { ADD_CHAT, GET_CHAT, SELETED_GROUP_CHAT } from '../actions/types';
+import { dummyMessages } from '../Data/Data';
 const initialState = {
   chats: [
     {
@@ -27,6 +28,7 @@ const initialState = {
       time: '11:15',
     },
   ],
+  dummyMessages,
 };
 
 export default function (state = initialState, action) {
@@ -40,6 +42,11 @@ export default function (state = initialState, action) {
       return {
         ...state,
         chats: [...state.chats, action.payload],
+      };
+    case SELETED_GROUP_CHAT:
+      return {
+        ...state,
+        chats: [...state.dummyMessages],
       };
     default:
       return state;
